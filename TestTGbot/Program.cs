@@ -129,6 +129,7 @@ namespace TelegramBotExperiments
             var receiverOptions = new ReceiverOptions
             {
                 //AllowedUpdates = new Telegram.Bot.Types.Enums.UpdateType[] { Telegram.Bot.Types.Enums.UpdateType.Message },
+
                 AllowedUpdates = { }, // receive all update types
             };
             bot.StartReceiving(HandleUpdateAsync, HandleErrorAsync, receiverOptions, cancellationToken);
